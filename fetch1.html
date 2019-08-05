@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Gatos 2</title>
+      </head>
+<body>
+
+<h2>Using the XMLHttpRequest Object</h2>
+
+<div id="demo">
+<button type="button" id="boton" >Change Content</button>
+</div>
+
+<script>
+
+document.getElementById("boton").addEventListener("click", perro);
+ function perro() {
+    fetch ("https://helloworldpro.sytes.net/license.txt")
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(myText) {
+    document.getElementById("demo").innerHTML =myText
+  });
+ 
+}
+
+
+</script>
+
+</body>
+</html>
